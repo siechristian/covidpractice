@@ -24,7 +24,7 @@ class App extends React.Component {
 			// console.log(data);
 			if (data)
 				this.setState((prevState) => ({
-					stats: prevState.stats.concat({ ...data, name: country.name })
+					stats: prevState.stats.concat({ data })
 				}));
 		});
 	}
